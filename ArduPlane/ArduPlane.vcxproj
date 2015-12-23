@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{17CAE2B8-BDC0-4F19-A766-EFF030EE73CA}</ProjectGuid>
+    <RootNamespace>ArduPlane</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\ArduPlane;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ADC;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ADC\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ADC_AnalogSource;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ADC_AnalogSource\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_AHRS;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_AHRS\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Airspeed;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Airspeed\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Arming;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Arming\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Baro;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Baro\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_BattMonitor;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_BattMonitor\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_BoardConfig;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_BoardConfig\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Buffer;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Buffer\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Camera;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Camera\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Common;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Common\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Compass;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Compass\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Declination;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Declination\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Frsky_Telem;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Frsky_Telem\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_GPS;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_GPS\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_AVR;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_AVR\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_AVR_SITL;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_AVR_SITL\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_Empty;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_Empty\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_FLYMAPLE;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_FLYMAPLE\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_Linux;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_Linux\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_PX4;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_PX4\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_VRBRAIN;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_HAL_VRBRAIN\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_InertialSensor;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_InertialSensor\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_L1_Control;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_L1_Control\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Math;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Math\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Menu;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Menu\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Mission;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Mission\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Mount;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Mount\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_NavEKF;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_NavEKF\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Navigation;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Navigation\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Notify;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Notify\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_OpticalFlow;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_OpticalFlow\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Param;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Param\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Progmem;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Progmem\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Rally;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Rally\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_RangeFinder;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_RangeFinder\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_RCMapper;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_RCMapper\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Relay;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Relay\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Scheduler;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Scheduler\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ServoRelayEvents;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_ServoRelayEvents\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_SpdHgtControl;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_SpdHgtControl\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_TECS;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_TECS\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Terrain;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Terrain\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Vehicle;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\AP_Vehicle\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\APM_Control;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\APM_Control\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\APM_OBC;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\APM_OBC\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\DataFlash;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\DataFlash\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\Filter;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\Filter\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\GCS_MAVLink;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\GCS_MAVLink\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\RC_Channel;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\RC_Channel\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\SITL;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\SITL\utility;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\StorageManager;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries\StorageManager\utility;G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\libraries;G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\hardware\apm\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\libraries;g:\work\apm\ardupilot-arduino-1.0.3-gcc-4.8.2-windows\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\include\;g:\work\apm\ardupilot-arduino-1.0.3-gcc-4.8.2-windows\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\include\avr\;g:\work\apm\ardupilot-arduino-1.0.3-gcc-4.8.2-windows\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\avr\;g:\work\apm\ardupilot-arduino-1.0.3-gcc-4.8.2-windows\ardupilot-arduino-1.0.3-windows\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1\ArduPlane\Visual Micro\.ArduPlane.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega2560__;ARDUINO=101;ARDUINO_MAIN;__AVR__;__avr__;F_CPU=16000000L;__cplusplus;GCC_VERSION=40302;ARDUINO_ARCH_AVR;ARDUINO_AVR_APM2_2560HAL;CONFIG_HAL_BOARD=HAL_BOARD_APM2;EXCLUDECORE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="altitude.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="ArduPlane.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Attitude.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="climb_rate.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_logic.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="commands_process.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="compat.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="control_modes.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="events.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="failsafe.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="GCS_Mavlink.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="geofence.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="landing.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Log.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="navigation.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="Parameters.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="px4_mixer.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="radio.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="sensors.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="setup.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="system.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="takeoff.ino">
+      <FileType>CppCode</FileType>
+    </None>
+    <None Include="test.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="APM_Config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="compat.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Parameters.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClInclude Include="Visual Micro\.ArduPlane.vsarduino.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.maximum_size="258048" arduino.upload.speed="115200" visualmicro.package.name="apm" arduino.board.property_bag="name=Arduino Mega 2560 HAL (Apm 2)&#xD;&#xA;upload.protocol=wiring&#xD;&#xA;upload.maximum_size=258048&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xFF&#xD;&#xA;bootloader.high_fuses=0xD8&#xD;&#xA;bootloader.extended_fuses=0xFD&#xD;&#xA;bootloader.path=stk500v2&#xD;&#xA;bootloader.file=stk500boot_v2_mega2560.hex&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=atmega2560&#xD;&#xA;build.f_cpu=16000000L&#xD;&#xA;build.nocore=true&#xD;&#xA;build.noarchive=true&#xD;&#xA;build.option1=-mcall-prologues&#xD;&#xA;build.option2=-DCONFIG_HAL_BOARD=HAL_BOARD_APM2&#xD;&#xA;build.option3=-DEXCLUDECORE&#xD;&#xA;build.linkoption1=-mcall-prologues&#xD;&#xA;runtime.ide.path=G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows&#xD;&#xA;build.system.path=G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\hardware\apm\system&#xD;&#xA;runtime.ide.version=101&#xD;&#xA;target_package=apm&#xD;&#xA;target_platform=avr&#xD;&#xA;runtime.hardware.path=G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\hardware&#xD;&#xA;originalid=apm2_2560HAL&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\arduino10x&#xD;&#xA;ide.hint=Arduino 0023 and 1.0.x Ide&#xD;&#xA;ide.location.key=Arduino&#xD;&#xA;ide.location.ide.winreg=Arduino 1.0.x Application&#xD;&#xA;ide.location.sketchbook.winreg=Arduino 1.0.x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\arduino&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\arduino\preferences.txt&#xD;&#xA;ide.default.package=arduino&#xD;&#xA;ide.default.platform=avr&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=arduino.exe&#xD;&#xA;ide.hosts=atmel&#xD;&#xA;ide.url=http://arduino.cc/en/Main/Software&#xD;&#xA;vm.debug=true&#xD;&#xA;software=ARDUINO&#xD;&#xA;ide.appid=arduino10x&#xD;&#xA;location.sketchbook=G:\Work\APM\ardupilot-ArduPlane-3.2.1\ardupilot-ArduPlane-3.2.1&#xD;&#xA;vm.core.include=wprogram.h&#xD;&#xA;build.board=AVR_APM2_2560HAL&#xD;&#xA;vm.boardsource.path=G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\hardware\apm&#xD;&#xA;runtime.platform.path=G:\Work\APM\ArduPilot-Arduino-1.0.3-gcc-4.8.2-windows\ArduPilot-Arduino-1.0.3-windows\hardware\apm&#xD;&#xA;vm.platformname.name=avr&#xD;&#xA;build.arch=AVR&#xD;&#xA;" visualmicro.application.name="arduino10x" arduino.build.mcu="atmega2560" arduino.upload.protocol="wiring" arduino.build.f_cpu="16000000L" arduino.board.desc="Arduino Mega 2560 HAL (Apm 2)" arduino.board.name="apm2_2560HAL" visualmicro.platform.name="avr" arduino.build.core="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
