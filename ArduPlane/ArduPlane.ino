@@ -1418,12 +1418,13 @@ static void update_flight_mode(void)
 		nav_roll_cd = 0;
 		nav_pitch_cd = 2000;
 
+
 		//ahrs.pitch_sensor
 		//gps.ground_speed()
 		//relative_altitude_abs_cm()
 		//nav_roll_cd = channel_roll->norm_input() * roll_limit_cd;
 		//set_mode(enum FlightMode mode)
-		
+		//test for get
 		break;
     }
 }
