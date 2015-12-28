@@ -640,6 +640,13 @@ const AP_Param::Info var_info[] PROGMEM = {
 	// @User: Standard
 	GSCALAR(flight_mode8, "FLTMODE8", FLIGHT_MODE_8),
 
+	// @Param: FLTMODE8
+	// @DisplayName: FlightMode9
+	// @Description: Flight mode for switch position 8 (1750 to 2049)
+	// @Values: 0:Manual,1:CIRCLE,2:STABILIZE,3:TRAINING,4:ACRO,5:FBWA,6:FBWB,7:CRUISE,8:AUTOTUNE,10:Auto,11:RTL,12:Loiter,15:Guided,17:TAKEOFF
+	// @User: Standard
+	GSCALAR(flight_mode9, "FLTMODE9", FLIGHT_MODE_9),
+
 	GSCALAR(flight_mode_channel2, "FLTMODE_CH2", FLIGHT_MODE_CHANNEL2),
 
     // @Param: LIM_ROLL_CD

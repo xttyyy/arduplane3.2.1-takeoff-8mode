@@ -15,30 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ArduPlane.pde" />
-    <None Include="Attitude.pde" />
-    <None Include="GCS_Mavlink.pde" />
-    <None Include="Log.pde" />
-    <None Include="Parameters.pde" />
-    <None Include="altitude.pde" />
-    <None Include="climb_rate.pde" />
-    <None Include="commands.pde" />
-    <None Include="commands_logic.pde" />
-    <None Include="commands_process.pde" />
-    <None Include="compat.pde" />
-    <None Include="control_modes.pde" />
-    <None Include="events.pde" />
-    <None Include="failsafe.pde" />
-    <None Include="geofence.pde" />
-    <None Include="landing.pde" />
-    <None Include="navigation.pde" />
-    <None Include="px4_mixer.pde" />
-    <None Include="radio.pde" />
-    <None Include="sensors.pde" />
-    <None Include="setup.pde" />
-    <None Include="system.pde" />
-    <None Include="takeoff.pde" />
-    <None Include="test.pde" />
+    <None Include="altitude.ino" />
+    <None Include="ArduPlane.ino" />
+    <None Include="Attitude.ino" />
+    <None Include="climb_rate.ino" />
+    <None Include="commands.ino" />
+    <None Include="commands_logic.ino" />
+    <None Include="commands_process.ino" />
+    <None Include="compat.ino" />
+    <None Include="control_modes.ino" />
+    <None Include="events.ino" />
+    <None Include="failsafe.ino" />
+    <None Include="GCS_Mavlink.ino" />
+    <None Include="geofence.ino" />
+    <None Include="landing.ino" />
+    <None Include="Log.ino" />
+    <None Include="navigation.ino" />
+    <None Include="Parameters.ino" />
+    <None Include="px4_mixer.ino" />
+    <None Include="radio.ino" />
+    <None Include="sensors.ino" />
+    <None Include="setup.ino" />
+    <None Include="system.ino" />
+    <None Include="takeoff.ino" />
+    <None Include="test.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.ArduPlane.vsarduino.h">

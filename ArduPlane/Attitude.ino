@@ -358,12 +358,12 @@ static void stabilize()
     } else if (control_mode == ACRO) {
         stabilize_acro(speed_scaler);
     } else {
-        if (g.stick_mixing == STICK_MIXING_FBW && control_mode != STABILIZE) {
+        if (g.stick_mixing == STICK_MIXING_FBW && control_mode != STABILIZE && control_mode!=TAKEOFF) {
             stabilize_stick_mixing_fbw();
         }
         stabilize_roll(speed_scaler);
         stabilize_pitch(speed_scaler);
-        if (g.stick_mixing == STICK_MIXING_DIRECT || control_mode == STABILIZE) {
+        if (g.stick_mixing == STICK_MIXING_DIRECT || control_mode == STABILIZE || control_mode==TAKEOFF) {
             stabilize_stick_mixing_direct();
         }
         stabilize_yaw(speed_scaler);

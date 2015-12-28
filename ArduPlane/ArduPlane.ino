@@ -573,6 +573,9 @@ static struct {
     takeoff_speed_time_ms : 0
 };
 
+//added direct takeoff mode
+static bool takeoffcancled;
+
 // true if we are in an auto-throttle mode, which means
 // we need to run the speed/height controller
 static bool auto_throttle_mode;
@@ -826,6 +829,8 @@ void setup() {
 
     // initialise the main loop scheduler
     scheduler.init(&scheduler_tasks[0], sizeof(scheduler_tasks)/sizeof(scheduler_tasks[0]));
+
+	takeoffcancled = false;
 }
 
 void loop()
@@ -1417,6 +1422,13 @@ static void update_flight_mode(void)
 	case TAKEOFF:
 		nav_roll_cd = 0;
 		nav_pitch_cd = 2000;
+		int16_t pitchinput = channel_pitch->pwm_to_angle();
+		if (pitchinput > 1000 || pitchinput < -1000 || relative_altitude_abs_cm()>5000)
+		{
+			set_mode(STABILIZE);
+		}
+
+
 
 
 		//ahrs.pitch_sensor

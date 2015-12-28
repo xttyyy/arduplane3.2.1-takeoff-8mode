@@ -274,7 +274,8 @@ public:
         k_param_flight_mode6,
 		k_param_flight_mode7,
 		k_param_flight_mode8,
-		k_param_flight_mode_channel2,
+		k_param_flight_mode9,
+	
 		
 
         //
@@ -313,6 +314,8 @@ public:
         k_param_pidTeThrottle, // unused
         k_param_pidNavPitchAltitude, // unused
         k_param_pidWheelSteer, // unused
+
+		k_param_flight_mode_channel2 = 251,
 
         // 254,255: reserved
     };
@@ -416,6 +419,7 @@ public:
     AP_Int8 flight_mode6;
 	AP_Int8 flight_mode7;
 	AP_Int8 flight_mode8;
+	AP_Int8 flight_mode9;
 	AP_Int8 flight_mode_channel2;
 
     // Navigational maneuvering limits

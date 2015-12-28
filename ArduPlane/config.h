@@ -174,7 +174,7 @@
 // FLIGHT_MODE_CHANNEL
 //
 #ifndef FLIGHT_MODE_CHANNEL
- # define FLIGHT_MODE_CHANNEL    8
+ # define FLIGHT_MODE_CHANNEL    5
 #endif
 #if (FLIGHT_MODE_CHANNEL != 5) && (FLIGHT_MODE_CHANNEL != 6) && (FLIGHT_MODE_CHANNEL != 7) && (FLIGHT_MODE_CHANNEL != 8)
  # error XXX
@@ -183,7 +183,7 @@
 #endif
 
 #ifndef FLIGHT_MODE_CHANNEL2
-# define FLIGHT_MODE_CHANNEL2    7
+# define FLIGHT_MODE_CHANNEL2    6
 #endif
 #if (FLIGHT_MODE_CHANNEL2 != 5) && (FLIGHT_MODE_CHANNEL2 != 6) && (FLIGHT_MODE_CHANNEL2 != 7) && (FLIGHT_MODE_CHANNEL2 != 8)
 # error XXX
@@ -215,7 +215,9 @@
 #if !defined(FLIGHT_MODE_8)
 # define FLIGHT_MODE_8                  MANUAL
 #endif
-
+#if !defined(FLIGHT_MODE_9)
+# define FLIGHT_MODE_9                  MANUAL
+#endif
 
 //////////////////////////////////////////////////////////////////////////////
 // THROTTLE_FAILSAFE

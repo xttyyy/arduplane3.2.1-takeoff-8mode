@@ -296,6 +296,15 @@ static void set_mode(enum FlightMode mode)
         // don't switch modes if we are already in the correct mode.
         return;
     }
+
+	//if plane is flying, refuce  to change to takeoff mode
+	if (mode == TAKEOFF)
+	{
+		if (relative_altitude_abs_cm() > 1000 && gps.ground_speed()>5)
+		{
+			return;
+		}
+	}
     if(g.auto_trim > 0 && control_mode == MANUAL)
         trim_control_surfaces();
 
