@@ -79,3 +79,5 @@ status.txt
 tags
 test.ArduCopter/*
 Thumbs.db
+*.opensdf
+*.suo

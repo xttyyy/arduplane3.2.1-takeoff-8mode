@@ -752,6 +752,11 @@ static AP_Mount camera_mount2(&current_loc, ahrs, 1);
 #endif
 
 ////////////////////////////////////////////////////////////////////////////////
+// Takeoff max pitch ,independent to auto flight mode takeoff status, hundredths degrees
+////////////////////////////////////////////////////////////////////////////////
+static int32_t takeoff_pitch = 2000;
+
+////////////////////////////////////////////////////////////////////////////////
 // Arming/Disarming mangement class
 ////////////////////////////////////////////////////////////////////////////////
 static AP_Arming arming(ahrs, barometer, compass, home_is_set, gcs_send_text_P);
@@ -1421,7 +1426,7 @@ static void update_flight_mode(void)
 
 	case TAKEOFF:
 		nav_roll_cd = 0;
-		nav_pitch_cd = 2000;
+		nav_pitch_cd = takeoff_pitch;
 		int16_t pitchinput = channel_pitch->pwm_to_angle();
 		if (pitchinput > 1000 || pitchinput < -1000 || relative_altitude_abs_cm()>5000)
 		{
