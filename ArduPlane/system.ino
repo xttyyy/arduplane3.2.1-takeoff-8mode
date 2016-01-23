@@ -410,6 +410,9 @@ static void set_mode(enum FlightMode mode)
 
 	case TAKEOFF:
 		auto_throttle_mode = false;
+		/*int32_t pitch = aparm.pitch_limit_max_cd.get();
+		takeoff_pitch = pitch;//(int32_t)aparm.pitch_limit_max_cd.get();*/
+                takeoff_pitch = (int32_t)aparm.pitch_limit_max_cd.get();
 		break;
     }
 
