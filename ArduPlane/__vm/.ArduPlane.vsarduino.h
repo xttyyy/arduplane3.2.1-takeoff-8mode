@@ -11,15 +11,15 @@
 #ifndef _VSARDUINO_H_
 #define _VSARDUINO_H_
 #define __AVR_ATmega2560__
-#define ARDUINO 101
+#define ARDUINO 166
 #define ARDUINO_MAIN
 #define __AVR__
 #define __avr__
 #define F_CPU 16000000L
-#define __cplusplus
+#define __cplusplus 201103L
 #define GCC_VERSION 40302
 #define ARDUINO_ARCH_AVR
-#define ARDUINO_AVR_APM2_2560HAL
+#define ARDUINO_AVR_APM_APM_AVR_APM2_2560HAL
 #define CONFIG_HAL_BOARD HAL_BOARD_APM2
 #define EXCLUDECORE
 #define __inline__
@@ -30,7 +30,7 @@
 #define __inline__
 #define __asm__ 
 #define __volatile__
-
+#define __AVR__
 typedef void *__builtin_va_list;
 #define __builtin_va_start
 #define __builtin_va_end
@@ -60,33 +60,33 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portOutputRegister(P)
 #define portInputRegister(P)
 #define portModeRegister(P)
-#include <ArduPlane.ino>
-#include <APM_Config.h>
-#include <Attitude.ino>
-#include <GCS_Mavlink.ino>
-#include <Log.ino>
-#include <Parameters.h>
-#include <Parameters.ino>
-#include <altitude.ino>
-#include <climb_rate.ino>
-#include <commands.ino>
-#include <commands_logic.ino>
-#include <commands_process.ino>
-#include <compat.h>
-#include <compat.ino>
-#include <config.h>
-#include <control_modes.ino>
-#include <defines.h>
-#include <events.ino>
-#include <failsafe.ino>
-#include <geofence.ino>
-#include <landing.ino>
-#include <navigation.ino>
-#include <px4_mixer.ino>
-#include <radio.ino>
-#include <sensors.ino>
-#include <setup.ino>
-#include <system.ino>
-#include <takeoff.ino>
-#include <test.ino>
+#include <..\ArduPlane\ArduPlane.ino>
+#include <..\ArduPlane\APM_Config.h>
+#include <..\ArduPlane\Attitude.ino>
+#include <..\ArduPlane\GCS_Mavlink.ino>
+#include <..\ArduPlane\Log.ino>
+#include <..\ArduPlane\Parameters.h>
+#include <..\ArduPlane\Parameters.ino>
+#include <..\ArduPlane\altitude.ino>
+#include <..\ArduPlane\climb_rate.ino>
+#include <..\ArduPlane\commands.ino>
+#include <..\ArduPlane\commands_logic.ino>
+#include <..\ArduPlane\commands_process.ino>
+#include <..\ArduPlane\compat.h>
+#include <..\ArduPlane\compat.ino>
+#include <..\ArduPlane\config.h>
+#include <..\ArduPlane\control_modes.ino>
+#include <..\ArduPlane\defines.h>
+#include <..\ArduPlane\events.ino>
+#include <..\ArduPlane\failsafe.ino>
+#include <..\ArduPlane\geofence.ino>
+#include <..\ArduPlane\landing.ino>
+#include <..\ArduPlane\navigation.ino>
+#include <..\ArduPlane\px4_mixer.ino>
+#include <..\ArduPlane\radio.ino>
+#include <..\ArduPlane\sensors.ino>
+#include <..\ArduPlane\setup.ino>
+#include <..\ArduPlane\system.ino>
+#include <..\ArduPlane\takeoff.ino>
+#include <..\ArduPlane\test.ino>
 #endif

@@ -577,13 +577,6 @@ const AP_Param::Info var_info[] PROGMEM = {
     // @User: Standard
     GSCALAR(gcs_heartbeat_fs_enabled, "FS_GCS_ENABL", GCS_FAILSAFE_OFF),
 
-    // @Param: FLTMODE_CH
-    // @DisplayName: Flightmode channel
-    // @Description: RC Channel to use for flight mode control
-    // @User: Advanced
-    GSCALAR(flight_mode_channel,    "FLTMODE_CH",     FLIGHT_MODE_CHANNEL),
-
-
     // @Param: FLTMODE1
     // @DisplayName: FlightMode1
     // @Values: 0:Manual,1:CIRCLE,2:STABILIZE,3:TRAINING,4:ACRO,5:FBWA,6:FBWB,7:CRUISE,8:AUTOTUNE,10:Auto,11:RTL,12:Loiter,15:Guided,17:TAKEOFF
@@ -647,7 +640,6 @@ const AP_Param::Info var_info[] PROGMEM = {
 	// @User: Standard
 	GSCALAR(flight_mode9, "FLTMODE9", FLIGHT_MODE_9),
 
-	GSCALAR(flight_mode_channel2, "FLTMODE_CH2", FLIGHT_MODE_CHANNEL2),
 
     // @Param: LIM_ROLL_CD
     // @DisplayName: Maximum Bank Angle
