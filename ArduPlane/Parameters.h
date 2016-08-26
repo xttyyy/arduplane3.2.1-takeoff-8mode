@@ -34,7 +34,7 @@ public:
     //////////////////////////////////////////////////////////////////
     // STOP!!! DO NOT CHANGE THIS VALUE UNTIL YOU FULLY UNDERSTAND THE
     // COMMENTS ABOVE. IF UNSURE, ASK ANOTHER DEVELOPER!!!
-    static const uint16_t k_format_version = 13;
+    static const uint16_t k_format_version = 16;
     //////////////////////////////////////////////////////////////////
 
 
@@ -262,6 +262,7 @@ public:
         k_param_kff_throttle_to_pitch,
         k_param_scaling_speed,
 
+		k_param_takeoff_mode_pitch=209,
         //
         // 210: flight modes
         //
@@ -406,6 +407,7 @@ public:
     AP_Float fs_batt_voltage;
     AP_Float fs_batt_mah;
 
+	AP_Int16 takeoff_mode_pitch;
     // Flight modes
     //
     AP_Int8 flight_mode1;

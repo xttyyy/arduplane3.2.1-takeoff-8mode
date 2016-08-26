@@ -577,6 +577,8 @@ const AP_Param::Info var_info[] PROGMEM = {
     // @User: Standard
     GSCALAR(gcs_heartbeat_fs_enabled, "FS_GCS_ENABL", GCS_FAILSAFE_OFF),
 
+	GSCALAR(takeoff_mode_pitch, "TAKEOFFMODEPITCH", TAKEOFFMODEPITCH),
+
     // @Param: FLTMODE1
     // @DisplayName: FlightMode1
     // @Values: 0:Manual,1:CIRCLE,2:STABILIZE,3:TRAINING,4:ACRO,5:FBWA,6:FBWB,7:CRUISE,8:AUTOTUNE,10:Auto,11:RTL,12:Loiter,15:Guided,17:TAKEOFF

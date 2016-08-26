@@ -191,6 +191,9 @@
 # error XXX
 #endif
 
+#if !defined(TAKEOFFMODEPITCH)
+# define TAKEOFFMODEPITCH                  1000
+#endif
 #if !defined(FLIGHT_MODE_1)
  # define FLIGHT_MODE_1                  RTL
 #endif
